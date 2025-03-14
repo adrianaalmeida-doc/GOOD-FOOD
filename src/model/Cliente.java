@@ -1,25 +1,14 @@
-package model;
+import java.util.List;
 
 public class Cliente {
-
-    private int id;
     private String nome;
-    private String email;
+    private String telefone;
+    private String endereco;
 
-    // Construtor
-    public Cliente(int id, String nome, String email) {
-        this.id = id;
+    public Cliente(String nome, String telefone, String endereco) {
         this.nome = nome;
-        this.email = email;
-    }
-
-    // Getter e Setter
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
+        this.telefone = telefone;
+        this.endereco = endereco;
     }
 
     public String getNome() {
@@ -30,11 +19,19 @@ public class Cliente {
         this.nome = nome;
     }
 
-    public String getEmail() {
-        return email;
+    public String getTelefone() {
+        return telefone;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
+    }
+
+    public String getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(String endereco) {
+        this.endereco = endereco;
     }
 }

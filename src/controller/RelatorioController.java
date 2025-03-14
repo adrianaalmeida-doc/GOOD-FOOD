@@ -1,5 +1,11 @@
-package controller;
+class RelatorioController {
+    private PedidoController pedidoController;
 
-public class RelatorioController {
-    
+    public RelatorioController(PedidoController pedidoController) {
+        this.pedidoController = pedidoController;
+    }
+
+    public void gerarRelatorio() {
+        Relatorio.gerarRelatorio(pedidoController.listarPedidos());
+    }
 }

@@ -1,5 +1,12 @@
-package view;
+class RelatorioView {
+    private RelatorioService relatorioService;
 
-public class RelatorioView {
-    
+    public RelatorioView(RelatorioService relatorioService) {
+        this.relatorioService = relatorioService;
+    }
+
+    public void exibirRelatorio() {
+        System.out.println("=== Relatório de Pedidos ===");
+        relatorioService.gerarRelatorioPedidos();
+    }
 }
